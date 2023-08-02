@@ -1,0 +1,61 @@
+.line__wrapper {
+    position: relative;
+    width: 99.9%;
+    height: 116px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transform: rotate(3deg);
+    animation: scroll 100s linear infinite;
+    background: url("/img/line1.jpg") #f96739;
+    height: 40px;
+    min-width: 320px;
+    width: 100%;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background-size: auto 40px;
+    background-repeat: repeat-x;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  @keyframes scroll {
+    0% {
+      background-position: 0px 0px;
+    }
+
+    100% {
+      background-position: -8444px 0%;
+    }
+  }
+
+  .wrapper-2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transform: rotate(-3deg);
+    animation: scroll-2 100s linear infinite;
+    background: url("/img/line2.jpg") #f8ba3b;
+    height: 40px;
+    min-width: 320px;
+    width: 100%;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background-size: auto 40px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+  }
+
+  @keyframes scroll-2 {
+    0% {
+      background-position: 2000px 0px;
+    }
+
+    100% {
+      background-position: 8432px 0%;
+    }
+  }

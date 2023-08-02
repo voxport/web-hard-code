@@ -83,8 +83,52 @@
     </header>
 
 
-    <section class="hero">
+    <section class="hero section">
+        <div class="container hero__wrapper">
+            <div class="hero__text-section">
+                <h1 class="hero__hero-title hero-title"><span class="hero__hero-title-span hero-title-span">Курс</span><br>&lt;Frontend developer&gt;
+                </h1>
+
+                <p class="hero__hero-description">Независимо от вашего уровня подготовки - от начинающего до опытного
+                    программиста - мы предлагаем
+                    индивидуальные занятия, которые адаптированы под ваши потребности и уровень сложности.
+                </p>
+
+                <p class="hero__hero-call-to-action">Первый урок бесплатно!</p>
+
+                <button class="hero__button button-2">Записаться на занятие</button>
+            </div>
+            
+            <picture class="hero__hero-img">
+                <source srcset="
+                  ./img/hero/hero-01-1200.png    1x,
+                  ./img/hero/hero-01-1200@2x.png 2x
+                " media="(min-width: 1200px)" />
+
+                <source srcset="
+                  ./img/hero/hero-01-768.png    1x,
+                  ./img/hero/hero-01-768@2x.png 2x
+                " media="(min-width: 768px)" />
+
+                <source srcset="
+                  ./img/hero/hero-01-320.png    1x,
+                  ./img/hero/hero-01-320@2x.png 2x
+                " media="(min-width: 320px)" />
+                <img class="hero__hero-img" src="./images/hero/hero-01-320.png" alt="hero img" loading="lazy" />
+            </picture>
+        </div>
     </section>
+
+  <!-- Бегущая строка -->
+        <div class="line__wrapper">
+            <div class="wrapper">
+            </div>
+
+            <div class="wrapper-2">
+            </div>
+        </div>
+
+    <script src="./js/animated-line.js" type="module"></script>
 </body>
 
 </html>
